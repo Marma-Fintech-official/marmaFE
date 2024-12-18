@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('/fonts/NeueMontreal/ppneuemontreal-bold.otf') format('opentype');
+    /* font-weight: bold; */
+}
+
+/* /Users/harish/Desktop/throughbit/MarmaFintech/public/fonts/ppneuemontreal-book.otf */
+
+
+.job-listings{
+    min-height: 70vh;
+
+}
+
+.apply-section {
+    background-color: rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(13.64px); 
+    box-shadow: inset -1.62px -1.62px 81.17px rgba(255, 255, 255, 0.02); 
+}
+
+   
+
+ 
+ @media (max-width:412px){
+
+    .job-listings{
+        padding: 20px;
+    }
+
+    /* .filter-btn{
+        padding-left: 30px;
+        padding-right:30px ;
+        
+    }
+    .opening-description{
+            font-size: 10px !important;
+            padding: 0px 16px;
+    }
+    .job-listings{
+        padding:0px 40px 0px  !important;
+    }
+    .job-opening-top{
+        gap: 20px !important;
+        justify-content: space-evenly !important;
+    } */
+}  
+
+
+@media (min-width:1024px){
+    .openings-header{
+        font-size: 60px;
+        font-family: PP Neue Montreal;
+    }
+    .custom-padding{
+        font-size: 18px;
+    }
+
+    .jobDescription_Style{
+        .p1{
+            b{
+                font-size: 20px !important;
+            }
+           
+        }
+        
+        b{
+            font-size: 24px !important;
+ 
+        }
+
+        .p2 {
+            padding-top: 14px !important;
+            padding-bottom: 14px !important;
+        }
+        p{
+            font-size: 18px !important;
+           
+        }
+        .p3{
+            line-height: 26px !important;
+            
+        }
+    }
+}
+@media (max-width:1024px){
+
+    .openings-header{
+        font-size: 48px;
+    
+        font-family: PP Neue Montreal;
+
+    }
+    .custom-padding{
+        font-size: 16px;
+    }
+    .jobDescription_Style{
+        .p1{
+            b{
+                font-size: 20px !important;
+            }
+           
+        }
+        
+        b{
+            font-size: 20px !important;
+ 
+        }
+
+        .p2 {
+            padding-top: 12px !important;
+            padding-bottom: 12px !important;
+        }
+        p{
+            font-size: 16px !important;
+           
+        }
+        .p3{
+            line-height: 24px !important;
+            
+        }
+    }
+}
+
+@media (max-width:768px){
+    .openings-header{
+        font-size: 42px;
+    
+        font-family: PP Neue Montreal;
+    }
+}
+
+
+
+@media (max-width:768px){
+    .openings-header{
+        font-size: 28px;
+        
+        font-family: PP Neue Montreal;
+    }
+    .custom-padding{
+        font-size: 18px;
+    }
+    .jobDescription_Style{
+        .p1{
+            b{
+                font-size: 20px !important;
+            }
+           
+        }
+        
+        b{
+            font-size: 20px !important;
+ 
+        }
+
+        .p2 {
+            padding-top: 8px !important;
+            padding-bottom: 4px !important;
+        }
+        p{
+            font-size: 14px !important;
+           
+        }
+        .p3{
+            line-height: 22px !important;
+            
+        }
+    }
+}
+
+
+@media (max-width:420px){
+
+    .openings-header{
+        font-size: 20px;
+        
+        font-family: PP Neue Montreal;
+    }
+    .custom-padding{
+        font-size: 18px;
+    }
+    .jobDescription_Style{
+        .p1{
+            b{
+                font-size: 16px !important;
+            }
+           
+        }
+        
+        b{
+            font-size: 16px !important;
+            
+        }
+        p{
+            font-size: 11px !important;
+           
+        }
+        .p3{
+            line-height: 16px !important;
+            b{
+                font-size: 20px !important;
+            }
+        }
+    }
+}

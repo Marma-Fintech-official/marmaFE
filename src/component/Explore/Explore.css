@@ -1,0 +1,268 @@
+  /* General container */
+  .explore-latest {
+    background-color: black;
+    padding         : 1rem 1.5rem;
+  }
+
+  /* Header section */
+  .header {
+    display       : flex;
+    flex-direction: row;
+    gap           : 8rem;
+    margin-bottom : 2rem;
+  }
+
+  .title {
+    color        : white;
+    font-size    : 2rem;
+    font-weight  : bold;
+    margin-bottom: 1rem;
+    width        : 33.33%;
+  }
+
+  .subtitle {
+    color      : gray;
+    font-size  : 0.875rem;
+    margin-top : 0.5rem;
+    margin-left: auto;
+  }
+
+  .event-card {
+    display      : flex;
+    gap          : 1.25rem;
+    padding      : 1rem;
+    border-radius: 0.5rem;
+  }
+
+
+
+
+  .event-card-content {
+    display       : flex;
+    flex-direction: column;
+    text-align    : center;
+    align-items   : center;
+    flex-grow     : 1;
+  }
+
+  .event-title {
+    color      : white;
+    font-size  : 1.125rem;
+    font-weight: 600;
+  }
+
+  .event-description {
+    color     : gray;
+    font-size : 1rem;
+    margin-top: 0.5rem;
+    display   : none;
+  }
+
+  .event-info {
+    display       : flex;
+    flex-direction: column-reverse;
+    padding-top   : 0.5rem;
+  }
+
+  
+  .arrow-icon {
+    padding-left: 4px !important;
+  }
+
+  .eventdate{
+    color: #F9F9F9;
+  }
+  .eventdate-l {
+    color     : #F9F9F9;
+    font-size : 14px;
+    margin-top: 1rem;
+    display   : list-item !important;
+  }
+
+  .register-btn {
+    margin-top      : 0.5rem;
+    display         : inline-flex;
+    align-items     : center;
+    padding         : 0.5rem 0.75rem;
+    background-color: black;
+    color           : white;
+    border          : 1px solid #4c4b4b;
+    border-radius   : 0.5rem;
+    text-decoration : none;
+    font-size       : 0.875rem;
+    transition      : background-color 0.3s ease;
+  }
+
+  .register-btn:hover {
+    background-color: #333;
+  }
+
+  .arrow-icon {
+    height     : 1rem;
+    margin-left: 0.25rem;
+  }
+
+ 
+
+  @media (min-width:1024px) {
+
+    .event-title-class {
+      font-size  : 26px !important;
+      font-weight: 500;
+     
+    }
+    .event-image {
+      width     : 270px;
+      height    : 150px;
+      margin-top: 10px;
+    }
+  
+  }
+
+  @media (max-width:1024px){
+    .event-image {
+      width     : 200px;
+      height    : 150px;
+      margin-top: 10px;
+    }
+  }
+
+
+
+  @media (min-width: 781px) {
+    .event-info {
+      display       : flex;
+      flex-direction: column;
+      align-items   : flex-start;
+    }
+
+    .event-title-class {
+      font-size: 24px;
+    }
+
+   
+   
+  }
+  
+  @media (max-width: 781px){
+    .event-title-class{
+      font-size: 22px;
+    }
+    .event-image {
+      width     : 200px;
+      height    : 150px;
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 647px) {
+    .header {
+      flex-direction: column;
+      gap           : 0.5rem;
+      align-items   : flex-start;
+    }
+
+    .subtitle {
+      margin-left: 0;
+    }
+
+    .event-title-class {
+      font-size: 20px;
+    }
+    /* .event-image{
+      height: 120px;
+      width: 150px;
+    } */
+  }
+
+  /* Responsive adjustments */
+  @media (max-width:540px) {
+    .event-title-class {
+      font-size: 22px;
+    }
+  }
+
+
+
+  @media (max-width: 480px) {
+    .event-description {
+      display: block;
+    }
+
+    .explore-header {
+      font-size: 20px !important;
+    }
+
+
+    .event-title-class {
+      font-size: 16px;
+    }
+    .event-image{
+
+      width: 130px;
+      height: 130px;
+      margin-top: 10px; 
+    }
+    
+
+    /* .event-image {
+      width : 100px;
+      height: 65px;
+    } */
+
+  }
+
+  @media(max-width:420px){
+    .event-title-class{
+      font-size: 14px;
+    }
+    .register-btn{
+      font-size: 10px;
+    }
+    .eventdate{
+      font-size: 10px;
+    }
+  }
+
+  @media (min-width:1100px){
+    /* .custom-padding{
+      padding-left: 180px;
+    } */
+  }
+  @media (min-width:1250px){
+    /* .custom-padding{
+      padding-left: 200px;
+    } */
+  }
+
+
+  /* @media (min-width:1440px){
+  .main-wrapper-explore{
+    padding-left: 300px !important;
+  }
+  .explore-header{
+    font-size: 42px !important;
+  }
+  .explore-subheader{
+    font-size: 20px !important;
+  }
+  .event-title-class{
+    font-size: 28px !important;
+  }
+  .event-description{
+    font-size: 18px !important;
+  }
+  .event-image{
+    width :250px;
+    height: 150px;
+  }
+  .eventdate-l {
+    color: gray;
+    font-size: 18px !important;
+    margin-top: 1rem;
+    display: list-item !important;
+  }
+  .register-btn{
+    font-size: 18px !important;
+  }
+} */

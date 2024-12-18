@@ -1,0 +1,520 @@
+.team-wrapper{
+  background-color   : black;
+  color              : white;
+  padding            : 0;
+  background-image   : url(/team.png);
+  background-repeat  : no-repeat;
+  background-size: 121% 117%;
+  background-position: center;
+  display            : flex;
+  flex-direction     : column;
+  justify-content    : end;
+  box-shadow         : #3d3d3d;
+  overflow-wrap      : anywhere;
+}
+
+
+
+.main-wrapper {
+  border       : 1px solid #3d3d3d;
+  border-radius: 21px;
+}
+
+.team-list-container {
+  display       : flex;
+  flex-direction: row;
+  width         : 100%;
+
+
+  .text-overlay {
+    position          : relative;
+    display           : flex;
+    flex-direction    : column;
+    justify-content   : center;
+    font-size         : 25px;
+    min-width         : -moz-fit-content;
+    min-width         : fit-content;
+    overflow          : hidden;
+
+    span {
+      color: #fff;
+    }
+  }
+
+  .text-overlay::before {
+    content      : "";
+    position     : absolute;
+    top          : 0;
+    left         : 0;
+    right        : 0;
+    bottom       : 0;
+    z-index      : -1;
+    background   : linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    filter       : blur(15px);
+    border-radius: 16px;
+    transform    : scale(1.1);
+  }
+
+  /* .text-overlay p{
+    font-size: 34px;
+  } */
+
+
+  .group {
+    display         : flex;
+    gap             : 20px;
+    /* padding-right: 20px; */
+    will-change     : transform;
+    animation       : scrolling 20s linear infinite;
+  }
+
+  .team-card {
+    width          : 400px;
+    height         : 277px;
+    color          : white;
+    border-radius  : 24px;
+    box-shadow     : rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+    backdrop-filter: blur(10px);
+    font-size      : xx-large;
+    justify-content: center;
+    background     : #2121218f;
+    padding        : 10px;
+  }
+
+  .profile-pic {
+    height       : 109px;
+    width        : 109px;
+    border-radius: 15px;
+    filter       : grayscale(1);
+  }
+
+
+  .slides {
+    display    : flex;
+    gap        : 20px;
+    will-change: transform;
+    animation  : scroll 1s linear infinite;
+  }
+
+
+  .linkedin-icon {
+    padding-top: 44px;
+    height     : auto;
+    width      : 46px;
+  }
+
+  .info {
+    display        : flex;
+    justify-content: space-between;
+  }
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.carousel {
+  padding   : 20px 20px;
+  overflow  : hidden;
+  overflow-x: hidden;
+  display   : flex;
+  z-index   : 1;
+  gap       : 20px;
+  width     : 100vw;
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
+/*+++++++++++++++++++++++++++Media Query================================= */
+
+
+
+
+/* FOR THE 4K SCREEN */
+
+@media (max-width: 2560px) {
+  .text-overlay p {
+    font-size: 42px !important;
+  }
+}
+
+
+@media (max-width: 1440px) {
+  .text-overlay p {
+    font-size: 42px !important;
+  }
+  .team-wrapper{
+    background-size: 120% 110%;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  .text-overlay p {
+    font-size: 32px !important;
+  }
+
+  .team-wrapper{
+    background-size: 141% 94%;
+  }
+
+  /* .team-card{
+    height: 200px !important;
+    width: 200px !important;
+  } */
+}
+
+
+@media (min-width: 750px) {
+
+
+  /* .profile-pic {
+    height: 109px !important;
+    width : 109px !important;
+  } */
+
+  
+
+  .team-card {
+    height : 150px;
+    width  : 100px;
+    padding: 10px !important;
+  }
+
+  .card-content {
+    display        : flex;
+    flex-direction : column;
+    padding        : -1px;
+    gap            : 20px;
+    list-style-type: none;
+    opacity        : 1;
+    overflow       : hidden;
+  }
+
+
+  .info {
+    h3 {
+      font-size: 24px !important;
+    }
+
+    p {
+      font-size: 16px !important;
+    }
+
+    .linkedin-icon {
+      height: auto;
+      width : 30px;
+    }
+
+    .official-name {
+      display        : flex;
+      flex-direction : column;
+      justify-content: center;
+    }
+
+  }
+
+  .official-position {
+    font-size: 14px;
+  }
+
+  .mobile-view {
+    display: none !important;
+    
+  }
+
+}
+
+@media (min-width:768px){
+  .web-view{
+    padding-left: 40px;
+  }
+}
+
+@media (max-width:768px) {
+  .web-view {
+    display: none !important;
+  }
+  .mobile-view{
+    display: block !important;
+  }
+  .team-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+@media (max-width:750px) {
+
+  .team-wrapper{
+    background-size: 163% 86%;
+  }
+
+  .text-overlay p {
+    font-size: 18px !important;
+  }
+
+  .profile-pic {
+    height: 100px !important;
+    width : 100px !important;
+  }
+
+  .team-card {
+    height: 235px !important;
+    width : 350px !important;
+  }
+
+
+
+  .card-content {
+    display        : flex;
+    flex-direction : column;
+    gap            : 10px;
+    margin         : 0px;
+    list-style-type: none;
+    opacity        : 1;
+    overflow       : hidden;
+  }
+
+  .linkedin-icon {
+    padding-bottom: 30px;
+  }
+
+
+  .info {
+    h3 {
+      font-size: 18px !important;
+    }
+
+    p {
+      font-size: 18px !important;
+    }
+
+    .linkedin-icon {
+      height: auto;
+      width : 30px;
+    }
+
+    .official-name {
+      display        : flex;
+      flex-direction : column;
+      justify-content: center;
+    }
+  }
+
+  /* .carousel {
+    padding: 20px 20px;
+    overflow: hidden;
+    overflow-x: hidden;
+    display: flex;
+    z-index: 1;
+    width: 103vw;
+    gap: 20px;
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 1%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 99%);
+  } */
+
+
+  .mobile-view {
+    width      : 100%;
+    font-size  : 26px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+
+}
+
+/* Responsive adjustments for smaller screens */
+
+@media (max-width: 480px) {
+  .text-overlay p {
+    font-size: 1px !important;
+  }
+
+  .profile-pic {
+    height: 85px !important;
+    width : 85px !important;
+  }
+
+  .team-card {
+    height: 200px !important;
+    width : 300px !important;
+  }
+
+
+
+  .card-content {
+    display        : flex;
+    flex-direction : column;
+    gap            : 2px;
+    margin         : 0px;
+    list-style-type: none;
+    opacity        : 1;
+    overflow       : hidden;
+    padding        : 2px 10px;
+  }
+
+  .linkedin-icon {
+    padding-bottom: 30px;
+  }
+
+
+  .info {
+    h3 {
+      font-size: 15px !important;
+    }
+
+    p {
+      font-size: 12px !important;
+    }
+
+    .linkedin-icon {
+      height: auto;
+      width : 25px;
+    }
+
+    .official-name {
+      display        : flex;
+      flex-direction : column;
+      justify-content: center;
+    }
+  }
+
+  .team-wrapper{
+    background-size: 190% 78%;
+  }
+}
+
+@media (max-width: 420px) {
+  .team-card {
+    width        : 320px !important;
+    height       : 200px !important;
+    padding      : 12px !important;
+    border-radius: 8px;
+  }
+
+  .profile-pic {
+    height: 95px !important;
+    width : 100px !important;
+  }
+
+  .official-name h3 {
+    font-size: 16px !important;
+  }
+
+  .official-name p {
+    font-size: 12px !important;
+  }
+
+  .linkedin-icon {
+
+    width: 22px !important;
+  }
+  .team-wrapper{
+    background-size: 183% 71%;
+  }
+}
+
+
+
+@media (max-width: 380px) {
+  .team-card {
+    width        : 280px !important;
+    height       : 180px !important;
+    padding      : 8px !important;
+    border-radius: 8px;
+  }
+
+  .profile-pic {
+    height: 70px !important;
+    width : 75px !important;
+  }
+
+  .official-name h3 {
+    font-size: 16px !important;
+  }
+
+  .official-name p {
+    font-size: 12px !important;
+  }
+
+  .linkedin-icon {
+
+    width: 22px !important;
+  }
+  .team-wrapper{
+    background-size: 197% 60%;
+  }
+}
+
+
+
+
+/* @media (max-width: 440px) {
+
+  .team-card {
+    width: 300px !important;
+    height: 200px !important;
+    color: white;
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+    font-size: xx-large;
+    justify-content: center;
+    background: #2121218f;
+    padding: 0px !important;
+    display: flex;
+    gap: 10px;
+  }
+
+  .profile-pic {
+    height: 70px !important;
+    width: 70px !important;
+    border-radius: 15px;
+    filter: grayscale(1);
+  }
+
+  .card-content {
+    gap: 10px;
+  }
+
+  .official-name {
+    font-size: 10px !important;
+  }
+
+  .info {
+    gap: 20px;
+  }
+
+}
+
+
+@media (max-width: 375px) {}
+
+
+@media (max-width: 320px) {}
+
+
+
+
+
+.scroller{
+  max-width: 103vw;
+
+}
+
+.scroller__inner{
+  display: flex;
+} */

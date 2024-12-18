@@ -1,0 +1,17 @@
+<div contenteditable='true' dangerouslySetInnerHTML={createMarkupForPageContent()} onInput={updateContent} />
+
+
+
+const createMarkupForPageContent = () => {
+    if (pageContent) return { __html: pageContent }
+  }
+
+  const updateContent = (e) => {
+    let outerDivContent = e.target.outerHTML
+    console.log(outerDivContent)
+    let split1 = outerDivContent.indexOf('<termtext>')
+    let split2 = outerDivContent.indexOf('</termtext>')
+    let finalHtmlContent = outerDivContent.substring(split1, split2 + 10)
+    setEditedPageContent(finalHtmlContent)
+    setContentUpdated(true)
+  }

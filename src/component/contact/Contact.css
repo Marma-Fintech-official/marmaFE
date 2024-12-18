@@ -1,0 +1,62 @@
+
+
+.contact-section{
+  background-color:  #05050566;
+  border: 0.83px solid #6664644F;
+  margin: 20px;
+}
+
+
+.contact-social{
+  background: #16161696;
+  border: 0.64px solid #6664644F;
+  padding: 0px;
+}
+
+.social-item{
+  background: #16161696;
+ border: 0.64px solid #6664644F;
+}
+
+.social-item{
+  color: white;
+  background-color: black;
+}
+.social-handle{
+  background-color:#232323;
+}
+
+.contact-icons{
+  background-color:  #15151587;
+  border: 0.5px solid #3F3C3C;
+}
+
+.social-icon{
+  align-items: start;
+  
+}
+
+.form-submit-btn{
+  background-color: #131212;
+  border: 0.5px solid rgb(40, 40, 40);
+
+}
+
+.contact-border{
+  border: 1px solid rgb(49, 49, 49);
+}
+.form-border{
+  border: 0.83px solid #6664644F;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ++++++++++++++++++MEDIA QUERY---------------------- */

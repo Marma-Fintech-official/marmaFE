@@ -1,0 +1,313 @@
+ /* @font-face {
+  font-family: 'PPnue';
+  src: url('/fonts/NeueMontreal/ppneuemontreal-medium.otf') format('opentype');
+  
+}  */
+
+
+
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 900px;
+  align-items: center;
+  position: relative;
+  /* transition: transform 0.5s ease-out; */
+}
+
+
+
+.beforecards {
+  font-size: 2rem;
+  color: white;
+  margin-right: 20px;
+  white-space: nowrap;
+}
+
+.card {
+  width: 600px;
+  height: 600px;
+  margin: 20px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  /* transition: transform 0.5s ease-out;
+  animation: wavy 3s ease-in-out infinite; */
+}
+
+
+.title-num {
+  font-size: 38px;
+  font-weight: 100;
+  text-align: left;
+}
+
+.product-description {
+  font-size: 18px;
+  font-weight: 100;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.carsouel {
+  gap: 20px;
+}
+
+.product-card-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  gap: 15px;
+  
+
+}
+
+.product-title {
+  font-size: 52px;
+  text-align: left;
+  letter-spacing: 3px;
+  font-weight: 100;
+  
+}
+
+
+/* @keyframes wavy {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  } */
+
+/* .container::-webkit-scrollbar {
+  display: none;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; 
+  height: 100vh; 
+  -webkit-overflow-scrolling: touch; 
+} */
+
+/* boopathy changes */
+/* .sticky {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+} */
+
+/* Ensure the child elements (cards) snap into place */
+/* .card {
+  scroll-snap-align: start;
+} */
+
+/* Add smooth scroll effect to horizontal scroll */
+
+.sticky {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Add some padding to ensure the cards are spaced nicely */
+.card {
+  margin-right: 20px;
+}
+
+/* changes ends */
+
+
+/* ------------MEDIA QUERY-------------------- */
+
+@media screen and (min-width: 1400px) and (max-width: 1700px) {
+
+  .product-title {
+    font-size: 65px;
+    font-weight: 100;
+  }
+
+  .product-description {
+    font-size: 19px;
+    /* padding-top: 10px; */
+  }
+
+
+}
+
+
+
+@media (max-width:1440px){
+
+  .product-card-data {
+    padding: 80px;
+  }
+
+
+}  
+@media (min-width:1440px) {
+
+  .card {
+    width: 800px !important;
+    height: 600px !important;
+  }
+
+  
+  .product-card-data {
+    padding: 70px;
+  }
+}
+
+@media (max-width:1440px){
+
+  .product-card-data {
+    padding: 56px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 600px;
+    height: 520px;
+  }
+  
+
+  .product-card-data {
+    padding: 35px !important;
+  }
+
+  .title-num {
+    font-size: 38px;
+  }
+
+  /* .product-title {
+    font-size: 1.8rem;
+  } */
+
+  .product-description {
+    font-size: 1rem;
+  }
+}
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+  .carsouel {
+    gap: 30px;
+  }
+
+  .card {
+    width: 500px;
+    height: 450px;
+  }
+
+  .title-num {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+
+  .product-title {
+    font-size: 38px;
+  }
+
+  .product-description {
+    font-size: 0.9rem;
+  }
+
+  .product-card-data {
+    padding: 35px !important;
+  }
+}
+
+@media (max-width:660px) {
+  .card {
+    height: 500px;
+    width: 450px;
+  }
+
+  .product-card-data {
+    padding: 28px !important;
+  }
+  .product-title{
+    font-size: 32px;
+  }
+}
+
+/* For screens 468px and below */
+@media (max-width: 468px) {
+  .card {
+    width: 340px;
+    height: 430px;
+  }
+
+  .title-num {
+    font-size: 1.5rem;
+  }
+
+  /* .product-title {
+    font-size: 1.2rem;
+  } */
+  .product-title{
+    font-size: 26px;
+  }
+
+  .product-description {
+    font-size: 0.8rem;
+  }
+
+  .product-card-data {
+    padding: 25px !important;
+  }
+}
+
+/* For screens 420px and below */
+@media (max-width: 420px) {
+
+  .card {
+    width: 300px !important;
+    height: 410px !important;
+
+  }
+
+  .title-num {
+    font-size: 1.2rem;
+  }
+
+  /* .product-title {
+    font-size: 1.6rem;
+  } */
+
+  .product-description {
+    font-size: 0.7rem;
+  }
+
+  .product-card-data {
+    gap: 10px;
+  }
+
+  .product-card-data {
+    padding: 25px !important;
+  }
+}
